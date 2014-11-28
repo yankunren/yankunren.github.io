@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-
-<<<<<<< HEAD
   <title><![CDATA[Yankun's Blog]]></title>
   <link href="http://yankunren.github.io/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
@@ -22,18 +20,5 @@
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
-=======
-  <title><![CDATA[YanKun’s Blog]]></title>
-  <link href="http://yankunren.github.io/atom.xml" rel="self"/>
-  <link href="http://yankunren.github.io/"/>
-  <updated>2014-11-28T00:31:59+08:00</updated>
-  <id>http://yankunren.github.io/</id>
-  <author>
-    <name><![CDATA[yankun]]></name>
-    
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
 
->>>>>>> refs/remotes/origin/master
-  
 </feed>
