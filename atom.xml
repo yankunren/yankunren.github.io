@@ -4,7 +4,7 @@
   <title><![CDATA[Yankun's Blog]]></title>
   <link href="http://yankunren.github.io/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-11-28T14:39:59+08:00</updated>
+  <updated>2014-11-28T22:36:33+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -27,7 +27,7 @@
 
 <p>Octopress 是一款基于 Jekyll 的静态站点生成系统，使用Ruby实现，所以您需要懂点Ruby的知识，其实会几个命令就行；</p>
 
-<p>Octopress的博客内容是通过Markdown来书写，所以您需要了解Markdown的编写规则，Markdown 语法说明可以让你在几分钟之内熟悉Markdown的语法，在Windows下可以使用MarkDown Pad或是使用在线的编辑器<a href="http://mahua.jser.me/%E8%BF%9B%E8%A1%8C%E7%BC%96%E8%BE%91%EF%BC%9B">http://mahua.jser.me/%E8%BF%9B%E8%A1%8C%E7%BC%96%E8%BE%91%EF%BC%9B</a></p>
+<p>Octopress的博客内容是通过Markdown来书写，所以您需要了解Markdown的编写规则，Markdown 语法说明可以让你在几分钟之内熟悉Markdown的语法，在Windows下可以使用MarkDown Pad或是使用在线的编辑器<a href="http://mahua.jser.me/">http://mahua.jser.me/</a> 进行编辑；</p>
 
 <p>Octopress通常会部署在GitHub上，所以您需要会一些简单的Git命令以及Gtihub的使用。</p>
 
