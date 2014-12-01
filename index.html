@@ -102,12 +102,13 @@ duoshuo_short_name: &hellip;">
 
 <p>1、在 _config.yml 中添加</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'># duoshuo comments
-</span><span class='line'>duoshuo_comments: true
-</span><span class='line'>duoshuo_short_name: yourname</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># duoshuo comments</span>
+</span><span class='line'><span class="ss">duoshuo_comments</span><span class="p">:</span> <span class="kp">true</span>
+</span><span class='line'><span class="ss">duoshuo_short_name</span><span class="p">:</span> <span class="n">yourname</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 <p>2、在 source/_layouts/post.html 中的 disqus代码</p>
@@ -139,20 +140,7 @@ duoshuo_short_name: &hellip;">
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">{</span><span class="o">%</span> <span class="k">if</span> <span class="n">site</span><span class="o">.</span><span class="n">duoshuo_short_name</span> <span class="ow">and</span> <span class="n">site</span><span class="o">.</span><span class="n">duoshuo_comments</span> <span class="o">==</span> <span class="kp">true</span> <span class="ow">and</span> <span class="n">page</span><span class="o">.</span><span class="n">comments</span> <span class="o">==</span> <span class="kp">true</span> <span class="sx">%}</span>
 </span><span class='line'><span class="sx">  &lt;section&gt;</span>
 </span><span class='line'><span class="sx">    &lt;h1&gt;Comments&lt;/h1&gt;</span>
-</span><span class='line'><span class="sx">    &lt;div id=&quot;comments&quot; aria-live=&quot;polite&quot;&gt;<!-- Duoshuo Comment BEGIN -->
-<div class="ds-thread" data-title="集成‘多说’评论"></div>
-<script type="text/javascript">
-  var duoshuoQuery = {short_name:"yankunren"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = 'http://static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-    || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-</script>
-<!-- Duoshuo Comment END --></span><span class="o">&lt;</span><span class="sr">/div&gt;</span>
+</span><span class='line'><span class="sx">    &lt;div id=&quot;comments&quot; aria-live=&quot;polite&quot;&gt;</span><span class="p">{</span><span class="o">%</span> <span class="kp">include</span> <span class="n">post</span><span class="o">/</span><span class="n">duoshuo</span><span class="o">.</span><span class="n">html</span> <span class="sx">%}</span><span class="o">&lt;</span><span class="sr">/div&gt;</span>
 </span><span class='line'><span class="sr">  &lt;/se</span><span class="n">ction</span><span class="o">&gt;</span>
 </span><span class='line'><span class="p">{</span><span class="o">%</span> <span class="n">endif</span> <span class="o">%</span><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
@@ -196,8 +184,8 @@ duoshuo_short_name: &hellip;">
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'>    <span class="p">{</span><span class="o">%</span> <span class="k">if</span> <span class="n">site</span><span class="o">.</span><span class="n">disqus_short_name</span> <span class="ow">and</span> <span class="n">page</span><span class="o">.</span><span class="n">comments</span> <span class="o">!=</span> <span class="kp">false</span> <span class="ow">and</span> <span class="n">post</span><span class="o">.</span><span class="n">comments</span> <span class="o">!=</span> <span class="kp">false</span> <span class="ow">and</span> <span class="n">site</span><span class="o">.</span><span class="n">disqus_show_comment_count</span> <span class="o">==</span> <span class="kp">true</span> <span class="sx">%}</span>
-</span><span class='line'><span class="sx">     | &lt;a href=&quot;</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">{</span><span class="o">%</span> <span class="k">if</span> <span class="n">site</span><span class="o">.</span><span class="n">disqus_short_name</span> <span class="ow">and</span> <span class="n">page</span><span class="o">.</span><span class="n">comments</span> <span class="o">!=</span> <span class="kp">false</span> <span class="ow">and</span> <span class="n">post</span><span class="o">.</span><span class="n">comments</span> <span class="o">!=</span> <span class="kp">false</span> <span class="ow">and</span> <span class="n">site</span><span class="o">.</span><span class="n">disqus_show_comment_count</span> <span class="o">==</span> <span class="kp">true</span> <span class="sx">%}</span>
+</span><span class='line'><span class="sx">| &lt;a href=&quot;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -207,8 +195,8 @@ duoshuo_short_name: &hellip;">
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'>     <span class="p">{</span><span class="o">%</span> <span class="k">if</span> <span class="n">site</span><span class="o">.</span><span class="n">duoshuo_short_name</span> <span class="ow">and</span> <span class="n">page</span><span class="o">.</span><span class="n">comments</span> <span class="o">!=</span> <span class="kp">false</span> <span class="ow">and</span> <span class="n">post</span><span class="o">.</span><span class="n">comments</span> <span class="o">!=</span> <span class="kp">false</span> <span class="ow">and</span> <span class="n">site</span><span class="o">.</span><span class="n">duoshuo_comments</span> <span class="o">==</span> <span class="kp">true</span> <span class="sx">%}</span>
-</span><span class='line'><span class="sx">      | &lt;a href=&quot;</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">{</span><span class="o">%</span> <span class="k">if</span> <span class="n">site</span><span class="o">.</span><span class="n">duoshuo_short_name</span> <span class="ow">and</span> <span class="n">page</span><span class="o">.</span><span class="n">comments</span> <span class="o">!=</span> <span class="kp">false</span> <span class="ow">and</span> <span class="n">post</span><span class="o">.</span><span class="n">comments</span> <span class="o">!=</span> <span class="kp">false</span> <span class="ow">and</span> <span class="n">site</span><span class="o">.</span><span class="n">duoshuo_comments</span> <span class="o">==</span> <span class="kp">true</span> <span class="sx">%}</span>
+</span><span class='line'><span class="sx">| &lt;a href=&quot;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 </div>
