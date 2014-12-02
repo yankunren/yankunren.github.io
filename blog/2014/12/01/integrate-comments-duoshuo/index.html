@@ -95,7 +95,7 @@ duoshuo_short_name: &hellip;">
 
 <div class="entry-content"><p>首先申请多说评论，官网：<a href="http://duoshuo.com/">http://duoshuo.com/</a> 添加站点获取shortname</p>
 
-<p>集成步骤：</p>
+<h3>集成步骤：</h3>
 
 <p>1、在 _config.yml 中添加</p>
 
@@ -108,7 +108,10 @@ duoshuo_short_name: &hellip;">
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>2、在 source/_layouts/post.html 中的 disqus代码</p>
+<!-- more -->
+
+
+<p>2、在 source/_layouts/post.html 中的 disqus代码段：</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -143,7 +146,7 @@ duoshuo_short_name: &hellip;">
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>然后就按路径创建一个 source/_includes/post/duoshuo.html</p>
+<p>3、创建duoshuo.html，路径：source/_includes/post/duoshuo.html</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -159,41 +162,43 @@ duoshuo_short_name: &hellip;">
 <span class='line-number'>12</span>
 <span class='line-number'>13</span>
 <span class='line-number'>14</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;!--</span> <span class="no">Duoshuo</span> <span class="no">Comment</span> <span class="k">BEGIN</span> <span class="o">--&gt;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;ds-thread&quot;</span> <span class="n">data</span><span class="o">-</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;集成‘多说’评论&quot;</span><span class="o">&gt;&lt;</span><span class="sr">/div&gt;</span>
-</span><span class='line'><span class="sr">&lt;script type=&quot;text/</span><span class="n">javascript</span><span class="s2">&quot;&gt;</span>
-</span><span class='line'><span class="s2">  var duoshuoQuery = {short_name:&quot;</span><span class="p"></span><span class="s2">&quot;};</span>
-</span><span class='line'><span class="s2">  (function() {</span>
-</span><span class='line'><span class="s2">    var ds = document.createElement(&#39;script&#39;);</span>
-</span><span class='line'><span class="s2">    ds.type = &#39;text/javascript&#39;;ds.async = true;</span>
-</span><span class='line'><span class="s2">    ds.src = &#39;http://static.duoshuo.com/embed.js&#39;;</span>
-</span><span class='line'><span class="s2">    ds.charset = &#39;UTF-8&#39;;</span>
-</span><span class='line'><span class="s2">    (document.getElementsByTagName(&#39;head&#39;)[0] </span>
-</span><span class='line'><span class="s2">    || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(ds);</span>
-</span><span class='line'><span class="s2">  })();</span>
-</span><span class='line'><span class="s2">&lt;/script&gt;</span>
-</span><span class='line'><span class="s2">&lt;!-- Duoshuo Comment END --&gt;</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="c">&lt;!-- Duoshuo Comment BEGIN --&gt;</span>
+</span><span class='line'><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;ds-thread&quot;</span> <span class="na">data-title=</span><span class="s">&quot;集成‘多说’评论&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+</span><span class='line'><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">duoshuoQuery</span> <span class="o">=</span> <span class="p">{</span><span class="nx">short_name</span><span class="o">:</span><span class="s2">&quot;yankunren&quot;</span><span class="p">};</span>
+</span><span class='line'>  <span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">ds</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">);</span>
+</span><span class='line'>    <span class="nx">ds</span><span class="p">.</span><span class="nx">type</span> <span class="o">=</span> <span class="s1">&#39;text/javascript&#39;</span><span class="p">;</span><span class="nx">ds</span><span class="p">.</span><span class="nx">async</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">ds</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s1">&#39;http://static.duoshuo.com/embed.js&#39;</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">ds</span><span class="p">.</span><span class="nx">charset</span> <span class="o">=</span> <span class="s1">&#39;UTF-8&#39;</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;head&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</span><span class='line'>    <span class="o">||</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">ds</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">})();</span>
+</span><span class='line'><span class="nt">&lt;/script&gt;</span>
+</span><span class='line'><span class="c">&lt;!-- Duoshuo Comment END --&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>随后，再修改 _includes/article.html 文件，在</p>
+<p>4、修改 _includes/article.html 文件，在代码段：</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">{</span><span class="o">%</span> <span class="k">if</span> <span class="n">site</span><span class="o">.</span><span class="n">disqus_short_name</span> <span class="ow">and</span> <span class="n">page</span><span class="o">.</span><span class="n">comments</span> <span class="o">!=</span> <span class="kp">false</span> <span class="ow">and</span> <span class="n">post</span><span class="o">.</span><span class="n">comments</span> <span class="o">!=</span> <span class="kp">false</span> <span class="ow">and</span> <span class="n">site</span><span class="o">.</span><span class="n">disqus_show_comment_count</span> <span class="o">==</span> <span class="kp">true</span> <span class="sx">%}</span>
-</span><span class='line'><span class="sx">| &lt;a href=&quot;</span>
+</span><span class='line'><span class="sx">| &lt;a href=&quot;</span><span class="p">{</span><span class="o">%</span> <span class="k">if</span> <span class="n">index</span> <span class="sx">%}{{ root_url }</span><span class="p">}{{</span> <span class="n">post</span><span class="o">.</span><span class="n">url</span> <span class="p">}}{</span><span class="o">%</span> <span class="n">endif</span> <span class="sx">%}</span><span class="c1">#disqus_thread&quot;&gt;Comments&lt;/a&gt;</span>
+</span><span class='line'><span class="p">{</span><span class="o">%</span> <span class="n">endif</span> <span class="o">%</span><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
 <p>   <br/>
-下方添加如下代码</p>
+下方添加如下代码：</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">{</span><span class="o">%</span> <span class="k">if</span> <span class="n">site</span><span class="o">.</span><span class="n">duoshuo_short_name</span> <span class="ow">and</span> <span class="n">page</span><span class="o">.</span><span class="n">comments</span> <span class="o">!=</span> <span class="kp">false</span> <span class="ow">and</span> <span class="n">post</span><span class="o">.</span><span class="n">comments</span> <span class="o">!=</span> <span class="kp">false</span> <span class="ow">and</span> <span class="n">site</span><span class="o">.</span><span class="n">duoshuo_comments</span> <span class="o">==</span> <span class="kp">true</span> <span class="sx">%}</span>
-</span><span class='line'><span class="sx">| &lt;a href=&quot;</span>
+</span><span class='line'><span class="sx">| &lt;a href=&quot;</span><span class="p">{</span><span class="o">%</span> <span class="k">if</span> <span class="n">index</span> <span class="sx">%}{{ root_url }</span><span class="p">}{{</span> <span class="n">post</span><span class="o">.</span><span class="n">url</span> <span class="p">}}{</span><span class="o">%</span> <span class="n">endif</span> <span class="sx">%}</span><span class="c1">#comments&quot;&gt;Comments&lt;/a&gt;</span>
+</span><span class='line'><span class="p">{</span><span class="o">%</span> <span class="n">endif</span> <span class="o">%</span><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
 </div>

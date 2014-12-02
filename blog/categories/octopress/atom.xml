@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | Yankun's Blog]]></title>
+  <link href="http://yankunren.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://yankunren.github.io/"/>
+  <updated>2014-12-02T09:42:20+08:00</updated>
+  <id>http://yankunren.github.io/</id>
+  <author>
+    <name><![CDATA[Yankun]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[集成‘多说’评论]]></title>
+    <link href="http://yankunren.github.io/blog/2014/12/01/integrate-comments-duoshuo/"/>
+    <updated>2014-12-01T16:48:23+08:00</updated>
+    <id>http://yankunren.github.io/blog/2014/12/01/integrate-comments-duoshuo</id>
+    <content type="html"><![CDATA[<p>首先申请多说评论，官网：<a href="http://duoshuo.com/">http://duoshuo.com/</a> 添加站点获取shortname</p>
+
+<h3>集成步骤：</h3>
+
+<p>1、在 _config.yml 中添加
+&#8220;` ruby</p>
+
+<h1>duoshuo comments</h1>
+
+<p>duoshuo_comments: true
+duoshuo_short_name: yourname
+&#8220;`</p>
+
+<!-- more -->
+
+
+<p>2、在 source/_layouts/post.html 中的 disqus代码段：
+<code>ruby
+{% if site.disqus_short_name and page.comments == true %}
+  &lt;section&gt;
+    &lt;h1&gt;Comments&lt;/h1&gt;
+    &lt;div id="disqus_thread" aria-live="polite"&gt;{% include post/disqus_thread.html %}&lt;/div&gt;
+  &lt;/section&gt;
+{% endif %}
+</code></p>
+
+<p>下方添加 多说评论 模块
+<code>ruby
+{% if site.duoshuo_short_name and site.duoshuo_comments == true and page.comments == true %}
+  &lt;section&gt;
+    &lt;h1&gt;Comments&lt;/h1&gt;
+    &lt;div id="comments" aria-live="polite"&gt;{% raw %}{% include post/duoshuo.html %}{% endraw %}&lt;/div&gt;
+  &lt;/section&gt;
+{% endif %}
+</code>
+3、创建duoshuo.html，路径：source/_includes/post/duoshuo.html
+&#8220;` html</p>
+
+<!-- Duoshuo Comment BEGIN -->
+
+
+<div class="ds-thread" data-title="{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}"></div>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"{{ site.duoshuo_short_name }}"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+
+<!-- Duoshuo Comment END -->
+
+
+<pre><code>4、修改 _includes/article.html 文件，在代码段：
+</code></pre>
+
+<p>{% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
+| <a href="{% raw %}{% if index %}{{ root_url }}{{ post.url }}{% endif %}{% endraw %}#disqus_thread">Comments</a>
+{% endif %}
+<code>    
+下方添加如下代码：
+</code> ruby
+{% if site.duoshuo_short_name and page.comments != false and post.comments != false and site.duoshuo_comments == true %}
+| <a href="{% raw %}{% if index %}{{ root_url }}{{ post.url }}{% endif %}{% endraw %}#comments">Comments</a>
+{% endif %}
+&#8220;`</p>
+]]></content>
+  </entry>
+  
+</feed>
