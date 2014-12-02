@@ -4,7 +4,7 @@
   <title><![CDATA[Yankun's Blog]]></title>
   <link href="http://yankunren.github.io/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-02T09:21:01+08:00</updated>
+  <updated>2014-12-02T09:57:32+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -139,11 +139,11 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Build-blog-with-octopress]]></title>
+    <title type="html"><![CDATA[搭建Octopress博客]]></title>
     <link href="http://yankunren.github.io/blog/2014/11/28/build-blog-with-octopress/"/>
     <updated>2014-11-28T10:58:24+08:00</updated>
     <id>http://yankunren.github.io/blog/2014/11/28/build-blog-with-octopress</id>
-    <content type="html"><![CDATA[<h2>Windows下搭建Octopress博客</h2>
+    <content type="html"><![CDATA[<h3>Windows搭建</h3>
 
 <p>转载：<a href="http://www.cnblogs.com/oec2003/archive/2013/05/27/3100896.html">http://www.cnblogs.com/oec2003/archive/2013/05/27/3100896.html</a></p>
 
@@ -162,15 +162,15 @@
 <p>准备
 系统：Windows 2003 Server、Windows 7、Windows 2008R2 Server，这三个系统用下面的版本都安装成功过；</p>
 
-<p>Git：<a href="http://msysgit.googlecode.com/files/Git-1.8.1.2-preview20130201.exe">http://msysgit.googlecode.com/files/Git-1.8.1.2-preview20130201.exe</a></p>
+<p>-Git：<a href="http://msysgit.googlecode.com/files/Git-1.8.1.2-preview20130201.exe">http://msysgit.googlecode.com/files/Git-1.8.1.2-preview20130201.exe</a></p>
 
-<p>Ruby：<a href="http://files.rubyforge.vm.bytemark.co.uk/rubyinstaller/rubyinstaller-1.9.3-p429.exe">http://files.rubyforge.vm.bytemark.co.uk/rubyinstaller/rubyinstaller-1.9.3-p429.exe</a></p>
+<p>-Ruby：<a href="http://files.rubyforge.vm.bytemark.co.uk/rubyinstaller/rubyinstaller-1.9.3-p429.exe">http://files.rubyforge.vm.bytemark.co.uk/rubyinstaller/rubyinstaller-1.9.3-p429.exe</a></p>
 
-<p>DevKit：<a href="http://cloud.github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe">http://cloud.github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe</a></p>
+<p>-DevKit：<a href="http://cloud.github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe">http://cloud.github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe</a></p>
 
-<p>Python：<a href="http://www.python.org/ftp/python/2.7.5/python-2.7.5.msi">http://www.python.org/ftp/python/2.7.5/python-2.7.5.msi</a></p>
+<p>-Python：<a href="http://www.python.org/ftp/python/2.7.5/python-2.7.5.msi">http://www.python.org/ftp/python/2.7.5/python-2.7.5.msi</a></p>
 
-<p>Octopress：git://github.com/imathis/octopress.git</p>
+<p>-Octopress：git://github.com/imathis/octopress.git</p>
 
 <p>安装
 安装Git
@@ -190,11 +190,17 @@ DevKit下载下来的是一个自压缩文件，我们将其解压到D:/DevKit�
 
 <p>解压DevKit后，在命令行输入以下命令来进行安装：</p>
 
-<p>d:
-cd DevKit
-ruby dk.rb init
-ruby dk.rb install
-安装Python
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>d: 
+</span><span class='line'>cd DevKit
+</span><span class='line'>ruby dk.rb init 
+</span><span class='line'>ruby dk.rb install</span></code></pre></td></tr></table></div></figure>
+
+
+<p>安装Python
 安装Python,也是一路next就可以，博客的代码高亮用到了Python的Pygments模块，在Python中安装第三方库需要使用easy_install，在下面地址下载跟Python相对应的安装程序安装后就可以使用easy_install了。</p>
 
 <p><a href="https://pypi.python.org/pypi/setuptools">https://pypi.python.org/pypi/setuptools</a></p>
@@ -203,29 +209,50 @@ ruby dk.rb install
 
 <p>在命令提示符中输入如下命令就可以安装Pygments了。</p>
 
-<p>easy_install pygments
-安装Octopress
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>easy_install pygments</span></code></pre></td></tr></table></div></figure>
+
+
+<p>安装Octopress
 首先在GitBash中输入如下命令将Octopress代码拉到本地，</p>
 
-<p>cd d:/GitProject
-git clone git://github.com/imathis/octopress.git octopress
-然后需要安装Octopress的依赖项，安装依赖项需要用到Ruby的gem，使用下面的命令可以更换gem的更新源，使用国内的淘宝镜像速度相对快点。</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd d:/GitProject
+</span><span class='line'>git clone git://github.com/imathis/octopress.git octopress</span></code></pre></td></tr></table></div></figure>
 
-<p>gem sources -a <a href="http://ruby.taobao.org/">http://ruby.taobao.org/</a>
-gem sources -r <a href="http://rubygems.org/">http://rubygems.org/</a>
-gem sources -l
-修改Octopress目录下的Gemfile文件，将第一行的<a href="http://rubygems.org/">http://rubygems.org/</a> 修改为<a href="http://ruby.taobao.org/">http://ruby.taobao.org/</a></p>
+
+<p>然后需要安装Octopress的依赖项，安装依赖项需要用到Ruby的gem，使用下面的命令可以更换gem的更新源，使用国内的淘宝镜像速度相对快点。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem sources -a http://ruby.taobao.org/
+</span><span class='line'>gem sources -r http://rubygems.org/
+</span><span class='line'>gem sources -l</span></code></pre></td></tr></table></div></figure>
+
+
+<p>修改Octopress目录下的Gemfile文件，将第一行的<a href="http://rubygems.org/">http://rubygems.org/</a> 修改为<a href="http://ruby.taobao.org/">http://ruby.taobao.org/</a></p>
 
 <p>在命令提示符中进入到Octopress目录，输入下面命令进行依赖项的安装</p>
 
-<p>gem install bundler
-bundle install
-输入下面的命令来安装Octopress的默认主题</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install bundler
+</span><span class='line'>bundle install</span></code></pre></td></tr></table></div></figure>
 
-<p>rake install
-到此所有的安装工作已经结束，输入下面的命令可以在本地进行预览。</p>
 
-<p>rake preview</p>
+<p>输入下面的命令来安装Octopress的默认主题</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake install</span></code></pre></td></tr></table></div></figure>
+
+
+<p>到此所有的安装工作已经结束，输入下面的命令可以在本地进行预览。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake preview</span></code></pre></td></tr></table></div></figure>
+
 ]]></content>
   </entry>
   
