@@ -4,7 +4,7 @@
   <title><![CDATA[Yankun]]></title>
   <link href="http://yankunren.github.io/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-03T11:52:46+08:00</updated>
+  <updated>2014-12-03T16:49:24+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -252,6 +252,22 @@ DevKit下载下来的是一个自压缩文件，我们将其解压到D:/DevKit�
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>rake preview</span></code></pre></td></tr></table></div></figure>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Eclipse 添加代码行数统计插件]]></title>
+    <link href="http://yankunren.github.io/blog/2012/07/21/eclipse-plugin-statistic/"/>
+    <updated>2012-07-21T17:24:38+08:00</updated>
+    <id>http://yankunren.github.io/blog/2012/07/21/eclipse-plugin-statistic</id>
+    <content type="html"><![CDATA[<p>1、下载地址： <a href="http://download.csdn.net/detail/zhangquanchang/3152289">http://download.csdn.net/detail/zhangquanchang/3152289</a>
+解压文件：org.holon.statistic.lines_1.0.0
+2、放入目录：E:\eclipse\features
+3、重启Eclipse
+4、使用插件
+1>显示插件：</p>
+
+<p>2>使用操作</p>
 ]]></content>
   </entry>
   

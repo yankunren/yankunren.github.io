@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Tools | Yankun]]></title>
+  <link href="http://yankunren.github.io/blog/categories/tools/atom.xml" rel="self"/>
+  <link href="http://yankunren.github.io/"/>
+  <updated>2014-12-03T16:49:24+08:00</updated>
+  <id>http://yankunren.github.io/</id>
+  <author>
+    <name><![CDATA[Yankun]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Eclipse 添加代码行数统计插件]]></title>
+    <link href="http://yankunren.github.io/blog/2012/07/21/eclipse-plugin-statistic/"/>
+    <updated>2012-07-21T17:24:38+08:00</updated>
+    <id>http://yankunren.github.io/blog/2012/07/21/eclipse-plugin-statistic</id>
+    <content type="html"><![CDATA[<p>1、下载地址： <a href="http://download.csdn.net/detail/zhangquanchang/3152289">http://download.csdn.net/detail/zhangquanchang/3152289</a>
+解压文件：org.holon.statistic.lines_1.0.0
+2、放入目录：E:\eclipse\features
+3、重启Eclipse
+4、使用插件
+1>显示插件：</p>
+
+<p>2>使用操作</p>
+]]></content>
+  </entry>
+  
+</feed>
