@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tools | Yankun]]></title>
   <link href="http://yankunren.github.io/blog/categories/tools/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-03T17:32:32+08:00</updated>
+  <updated>2014-12-03T22:09:58+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -18,14 +18,27 @@
     <link href="http://yankunren.github.io/blog/2012/07/21/eclipse-plugin-statistic/"/>
     <updated>2012-07-21T17:24:38+08:00</updated>
     <id>http://yankunren.github.io/blog/2012/07/21/eclipse-plugin-statistic</id>
-    <content type="html"><![CDATA[<p>1、下载地址： <a href="http://download.csdn.net/detail/zhangquanchang/3152289">http://download.csdn.net/detail/zhangquanchang/3152289</a>
-解压文件：org.holon.statistic.lines_1.0.0
-2、放入目录：E:\eclipse\features
-3、重启Eclipse
-4、使用插件
-1>显示插件：</p>
+    <content type="html"><![CDATA[<p>1、下载地址： <a href="http://download.csdn.net/detail/zhangquanchang/3152289">http://download.csdn.net/detail/zhangquanchang/3152289</a></p>
 
-<p>2>使用操作</p>
+<p>解压文件：<strong>org.holon.statistic.lines_1.0.0</strong></p>
+
+<p>2、放入目录：
+<code>
+E:\eclipse\features
+</code>
+3、重启Eclipse</p>
+
+<!-- more -->
+
+
+<p>4、使用插件</p>
+
+<p>1><strong>显示插件：</strong></p>
+
+<p><img src="/images/blog-img/eclipse-plugin-statistic-1.png" /></p>
+
+<p>2><strong>使用操作</strong>
+<img src="/images/blog-img/eclipse-plugin-statistic-2.png" /></p>
 ]]></content>
   </entry>
   
