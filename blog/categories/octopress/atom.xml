@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Yankun]]></title>
   <link href="http://yankunren.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-03T16:49:24+08:00</updated>
+  <updated>2014-12-03T17:32:32+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Build-blog-references]]></title>
+    <link href="http://yankunren.github.io/blog/2014/12/03/build-blog-references/"/>
+    <updated>2014-12-03T17:21:32+08:00</updated>
+    <id>http://yankunren.github.io/blog/2014/12/03/build-blog-references</id>
+    <content type="html"><![CDATA[<p><strong>参考文章：</strong></p>
+
+<p>1、添加文章分类 <a href="http://www.jianshu.com/p/0ac2ac1a8e45">http://www.jianshu.com/p/0ac2ac1a8e45</a></p>
+
+<p>2、Octopress个性配置  <a href="http://imwuyu.me/talk-about/configuring-octopress.html/">http://imwuyu.me/talk-about/configuring-octopress.html/</a></p>
+
+<p>3、Windows下搭建Octopress博客 <a href="http://www.cnblogs.com/oec2003/archive/2013/05/27/3100896.html">http://www.cnblogs.com/oec2003/archive/2013/05/27/3100896.html</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[搭建Octopress博客]]></title>
