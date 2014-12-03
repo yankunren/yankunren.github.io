@@ -4,7 +4,7 @@
   <title><![CDATA[Yankun's Blog]]></title>
   <link href="http://yankunren.github.io/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-02T16:28:42+08:00</updated>
+  <updated>2014-12-03T10:03:53+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -162,15 +162,14 @@
 <p>准备
 系统：Windows 2003 Server、Windows 7、Windows 2008R2 Server，这三个系统用下面的版本都安装成功过；</p>
 
-<p>-Git：<a href="http://msysgit.googlecode.com/files/Git-1.8.1.2-preview20130201.exe">http://msysgit.googlecode.com/files/Git-1.8.1.2-preview20130201.exe</a></p>
-
-<p>-Ruby：<a href="http://files.rubyforge.vm.bytemark.co.uk/rubyinstaller/rubyinstaller-1.9.3-p429.exe">http://files.rubyforge.vm.bytemark.co.uk/rubyinstaller/rubyinstaller-1.9.3-p429.exe</a></p>
-
-<p>-DevKit：<a href="http://cloud.github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe">http://cloud.github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe</a></p>
-
-<p>-Python：<a href="http://www.python.org/ftp/python/2.7.5/python-2.7.5.msi">http://www.python.org/ftp/python/2.7.5/python-2.7.5.msi</a></p>
-
-<p>-Octopress：git://github.com/imathis/octopress.git</p>
+<blockquote><ul>
+<li>Git：<a href="http://msysgit.googlecode.com/files/Git-1.8.1.2-preview20130201.exe">http://msysgit.googlecode.com/files/Git-1.8.1.2-preview20130201.exe</a></li>
+<li>Ruby：<a href="http://files.rubyforge.vm.bytemark.co.uk/rubyinstaller/rubyinstaller-1.9.3-p429.exe">http://files.rubyforge.vm.bytemark.co.uk/rubyinstaller/rubyinstaller-1.9.3-p429.exe</a></li>
+<li>DevKit：<a href="http://cloud.github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe">http://cloud.github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe</a></li>
+<li>Python：<a href="http://www.python.org/ftp/python/2.7.5/python-2.7.5.msi">http://www.python.org/ftp/python/2.7.5/python-2.7.5.msi</a></li>
+<li>Octopress：git://github.com/imathis/octopress.git</li>
+</ul>
+</blockquote>
 
 <p>安装
 安装Git
@@ -182,11 +181,11 @@ Ruby的安装也是一路next就可以，不过记得勾选“Add Ruby executabl
 <p>安装DevKit
 DevKit下载下来的是一个自压缩文件，我们将其解压到D:/DevKit，有两点需要注意：</p>
 
-<ol>
+<blockquote><ol>
 <li><p>解压目录中没有有中文和空格；</p></li>
 <li><p>必须先安装Ruby，而且Ruby需要是RubyInstallser安装。</p></li>
 </ol>
-
+</blockquote>
 
 <p>解压DevKit后，在命令行输入以下命令来进行安装：</p>
 
