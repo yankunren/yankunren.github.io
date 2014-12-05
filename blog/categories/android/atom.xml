@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Android | Yankun]]></title>
+  <link href="http://yankunren.github.io/blog/categories/android/atom.xml" rel="self"/>
+  <link href="http://yankunren.github.io/"/>
+  <updated>2014-12-05T22:45:18+08:00</updated>
+  <id>http://yankunren.github.io/</id>
+  <author>
+    <name><![CDATA[Yankun]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Android客户端集成百度推送服务]]></title>
+    <link href="http://yankunren.github.io/blog/2014/06/26/android-integrate-baidu-push/"/>
+    <updated>2014-06-26T18:38:23+08:00</updated>
+    <id>http://yankunren.github.io/blog/2014/06/26/android-integrate-baidu-push</id>
+    <content type="html"><![CDATA[<p><strong>1、创建项目：</strong><a href="http://developer.baidu.com/console#app/create">http://developer.baidu.com/console#app/create</a></p>
+
+<p><img src="/images/blog-img/android-integrate-baidu-push-1.png" /></p>
+
+<p><strong>2、推送设置</strong><!-- more --></p>
+
+<p><img src="/images/blog-img/android-integrate-baidu-push-2.png" /></p>
+
+<p><img src="/images/blog-img/android-integrate-baidu-push-3.png" /></p>
+
+<p><strong>3、客户端集成</strong>
+<a href="http://developer.baidu.com/wiki/index.php?title=docs/cplat/push">http://developer.baidu.com/wiki/index.php?title=docs/cplat/push</a></p>
+
+<p>下载Android-sdk</p>
+
+<p>1>>Application 文件需要继承
+<code>java
+public class DemoApplication extends FrontiaApplication
+</code>
+2>>AndroidManifest.xml 添加以下代码段
+&#8220;`xml
+        <!-- push必须的receviver和service声明 -->
+        <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+        <!-- push结束 --></p>
+
+<pre><code>&lt;!-- Push service 运行需要的权限 --&gt;
+&lt;uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_SETTINGS" /&gt;
+&lt;uses-permission android:name="android.permission.VIBRATE" /&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" /&gt;
+&lt;uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" /&gt;
+&lt;uses-permission android:name="android.permission.DISABLE_KEYGUARD" /&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /&gt;
+</code></pre>
+
+<p>&#8220;`</p>
+]]></content>
+  </entry>
+  
+</feed>

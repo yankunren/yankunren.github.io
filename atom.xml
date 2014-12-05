@@ -4,7 +4,7 @@
   <title><![CDATA[Yankun]]></title>
   <link href="http://yankunren.github.io/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-03T22:09:58+08:00</updated>
+  <updated>2014-12-05T22:45:18+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -22,7 +22,7 @@
 
 <p>1、添加文章分类 <a href="http://www.jianshu.com/p/0ac2ac1a8e45">http://www.jianshu.com/p/0ac2ac1a8e45</a></p>
 
-<p>2、Octopress个性配置  <a href="http://imwuyu.me/talk-about/configuring-octopress.html/">http://imwuyu.me/talk-about/configuring-octopress.html/</a></p>
+<p>2、Octopress个性配置  <a href="http://imwuyu.me/talk-about/configuring-octopress.html/">http://imwuyu.me/talk-about/configuring-octopress.html/</a> <!-- more --></p>
 
 <p>3、Windows下搭建Octopress博客 <a href="http://www.cnblogs.com/oec2003/archive/2013/05/27/3100896.html">http://www.cnblogs.com/oec2003/archive/2013/05/27/3100896.html</a></p>
 
@@ -268,6 +268,118 @@ DevKit下载下来的是一个自压缩文件，我们将其解压到D:/DevKit�
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>rake preview</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Android客户端集成百度推送服务]]></title>
+    <link href="http://yankunren.github.io/blog/2014/06/26/android-integrate-baidu-push/"/>
+    <updated>2014-06-26T18:38:23+08:00</updated>
+    <id>http://yankunren.github.io/blog/2014/06/26/android-integrate-baidu-push</id>
+    <content type="html"><![CDATA[<p><strong>1、创建项目：</strong><a href="http://developer.baidu.com/console#app/create">http://developer.baidu.com/console#app/create</a></p>
+
+<p><img src="http://yankunren.github.io/images/blog-img/android-integrate-baidu-push-1.png" /></p>
+
+<p><strong>2、推送设置</strong><!-- more --></p>
+
+<p><img src="http://yankunren.github.io/images/blog-img/android-integrate-baidu-push-2.png" /></p>
+
+<p><img src="http://yankunren.github.io/images/blog-img/android-integrate-baidu-push-3.png" /></p>
+
+<p><strong>3、客户端集成</strong>
+<a href="http://developer.baidu.com/wiki/index.php?title=docs/cplat/push">http://developer.baidu.com/wiki/index.php?title=docs/cplat/push</a></p>
+
+<p>下载Android-sdk</p>
+
+<p>1>>Application 文件需要继承</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">DemoApplication</span> <span class="kd">extends</span> <span class="n">FrontiaApplication</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2>>AndroidManifest.xml 添加以下代码段</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'>    <span class="c">&lt;!-- push必须的receviver和service声明 --&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;receiver</span> <span class="na">android:name=</span><span class="s">&quot;com.baidu.android.pushservice.PushServiceReceiver&quot;</span>
+</span><span class='line'>        <span class="na">android:process=</span><span class="s">&quot;:bdservice_v1&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;intent-filter&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&quot;android.intent.action.BOOT_COMPLETED&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&quot;android.net.conn.CONNECTIVITY_CHANGE&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&quot;com.baidu.android.pushservice.action.notification.SHOW&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&quot;com.baidu.android.pushservice.action.media.CLICK&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/intent-filter&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/receiver&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;receiver</span> <span class="na">android:name=</span><span class="s">&quot;com.baidu.android.pushservice.RegistrationReceiver&quot;</span>
+</span><span class='line'>        <span class="na">android:process=</span><span class="s">&quot;:bdservice_v1&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;intent-filter&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&quot;com.baidu.android.pushservice.action.METHOD&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&quot;com.baidu.android.pushservice.action.BIND_SYNC&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/intent-filter&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;intent-filter&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&quot;android.intent.action.PACKAGE_REMOVED&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;data</span> <span class="na">android:scheme=</span><span class="s">&quot;package&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/intent-filter&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/receiver&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;service</span>
+</span><span class='line'>        <span class="na">android:name=</span><span class="s">&quot;com.baidu.android.pushservice.PushService&quot;</span>
+</span><span class='line'>        <span class="na">android:exported=</span><span class="s">&quot;true&quot;</span>
+</span><span class='line'>        <span class="na">android:process=</span><span class="s">&quot;:bdservice_v1&quot;</span> <span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;intent-filter&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&quot;com.baidu.android.pushservice.action.PUSH_SERVICE&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/intent-filter&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/service&gt;</span>
+</span><span class='line'>    <span class="c">&lt;!-- push结束 --&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">&lt;!-- Push service 运行需要的权限 --&gt;</span>
+</span><span class='line'><span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">&quot;android.permission.RECEIVE_BOOT_COMPLETED&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'><span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">&quot;android.permission.WRITE_SETTINGS&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'><span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">&quot;android.permission.VIBRATE&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'><span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">&quot;android.permission.ACCESS_DOWNLOAD_MANAGER&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'><span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">&quot;android.permission.DOWNLOAD_WITHOUT_NOTIFICATION&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'><span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">&quot;android.permission.DISABLE_KEYGUARD&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'><span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">&quot;android.permission.ACCESS_COARSE_LOCATION&quot;</span> <span class="nt">/&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
   </entry>
