@@ -4,7 +4,7 @@
   <title><![CDATA[Yankun]]></title>
   <link href="http://yankunren.github.io/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-05T22:45:18+08:00</updated>
+  <updated>2014-12-06T09:59:16+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -20,11 +20,11 @@
     <id>http://yankunren.github.io/blog/2014/12/03/build-blog-references</id>
     <content type="html"><![CDATA[<p><strong>参考文章：</strong></p>
 
-<p>1、添加文章分类 <a href="http://www.jianshu.com/p/0ac2ac1a8e45">http://www.jianshu.com/p/0ac2ac1a8e45</a></p>
+<p>1、[添加文章分类]( <a href="http://www.jianshu.com/p/0ac2ac1a8e45">http://www.jianshu.com/p/0ac2ac1a8e45</a></p>
 
-<p>2、Octopress个性配置  <a href="http://imwuyu.me/talk-about/configuring-octopress.html/">http://imwuyu.me/talk-about/configuring-octopress.html/</a> <!-- more --></p>
+<p>2、[Octopress个性配置](<a href="http://imwuyu.me/talk-about/configuring-octopress.html/">http://imwuyu.me/talk-about/configuring-octopress.html/</a></p>
 
-<p>3、Windows下搭建Octopress博客 <a href="http://www.cnblogs.com/oec2003/archive/2013/05/27/3100896.html">http://www.cnblogs.com/oec2003/archive/2013/05/27/3100896.html</a></p>
+<p>3、[Windows下搭建Octopress博客]( <a href="http://www.cnblogs.com/oec2003/archive/2013/05/27/3100896.html">http://www.cnblogs.com/oec2003/archive/2013/05/27/3100896.html</a><!-- more --></p>
 
 <p>4、<a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/</a></p>
 ]]></content>
@@ -279,9 +279,9 @@ DevKit下载下来的是一个自压缩文件，我们将其解压到D:/DevKit�
     <id>http://yankunren.github.io/blog/2014/06/26/android-integrate-baidu-push</id>
     <content type="html"><![CDATA[<p><strong>1、创建项目：</strong><a href="http://developer.baidu.com/console#app/create">http://developer.baidu.com/console#app/create</a></p>
 
-<p><img src="http://yankunren.github.io/images/blog-img/android-integrate-baidu-push-1.png" /></p>
+<p><img src="http://yankunren.github.io/images/blog-img/android-integrate-baidu-push-1.png" /><!-- more --></p>
 
-<p><strong>2、推送设置</strong><!-- more --></p>
+<p><strong>2、推送设置</strong></p>
 
 <p><img src="http://yankunren.github.io/images/blog-img/android-integrate-baidu-push-2.png" /></p>
 

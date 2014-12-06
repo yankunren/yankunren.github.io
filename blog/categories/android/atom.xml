@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Android | Yankun]]></title>
   <link href="http://yankunren.github.io/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-05T22:45:18+08:00</updated>
+  <updated>2014-12-06T09:59:16+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -20,9 +20,9 @@
     <id>http://yankunren.github.io/blog/2014/06/26/android-integrate-baidu-push</id>
     <content type="html"><![CDATA[<p><strong>1、创建项目：</strong><a href="http://developer.baidu.com/console#app/create">http://developer.baidu.com/console#app/create</a></p>
 
-<p><img src="/images/blog-img/android-integrate-baidu-push-1.png" /></p>
+<p><img src="/images/blog-img/android-integrate-baidu-push-1.png" /><!-- more --></p>
 
-<p><strong>2、推送设置</strong><!-- more --></p>
+<p><strong>2、推送设置</strong></p>
 
 <p><img src="/images/blog-img/android-integrate-baidu-push-2.png" /></p>
 
