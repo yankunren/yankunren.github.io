@@ -4,7 +4,7 @@
   <title><![CDATA[Yankun]]></title>
   <link href="http://yankunren.github.io/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-17T20:26:24+08:00</updated>
+  <updated>2014-12-17T20:31:44+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -18,19 +18,19 @@
     <link href="http://yankunren.github.io/blog/2014/12/17/app-solution-center/"/>
     <updated>2014-12-17T11:20:29+08:00</updated>
     <id>http://yankunren.github.io/blog/2014/12/17/app-solution-center</id>
-    <content type="html"><![CDATA[<h3>移动IM集成方案</h3>
+    <content type="html"><![CDATA[<h2>移动IM集成方案</h2>
 
 <p>1、<a href="http://www.easemob.com/">环信</a></p>
 
 <p>2、<a href="http://www.rongcloud.cn/">融云</a></p>
 
-<h3>社会化分享方案</h3>
+<h2>社会化分享方案</h2>
 
 <p>1、<a href="http://sharesdk.mob.com/Download">ShareSDK</a> <!-- more --></p>
 
 <p>2、<a href="http://www.umeng.com/social">友盟分享</a></p>
 
-<h3>信息推送方案</h3>
+<h2>信息推送方案</h2>
 
 <p>1、<a href="https://www.jpush.cn/common/">极光推送</a></p>
 
@@ -40,19 +40,20 @@
 
 <p>4、<a href="http://developer.baidu.com/cloud/push">百度云推送</a></p>
 
-<h3>语音</h3>
+<h2>语音</h2>
 
 <p>1、<a href="http://www.iflytek.com/">讯飞语音</a></p>
 
-<h3>地图</h3>
+<h2>地图</h2>
 
 <p>1、<a href="http://developer.baidu.com/map/">百度地图</a></p>
 
 <p>2、<a href="http://lbs.amap.com/">高德地图</a></p>
 
-<h3>APP支付</h3>
+<h2>APP支付</h2>
 
-<p>1、<a href="http://mobile.unionpay.com/">银联支付</a></p>
+<p>:smile:
+1、<a href="http://mobile.unionpay.com/">银联支付</a></p>
 
 <p>2、<a href="https://b.alipay.com/order/productDetail.htm?productId=2014110308141993">支付宝</a></p>
 ]]></content>
