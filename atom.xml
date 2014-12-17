@@ -4,7 +4,7 @@
   <title><![CDATA[Yankun]]></title>
   <link href="http://yankunren.github.io/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-17T17:37:22+08:00</updated>
+  <updated>2014-12-17T20:26:24+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -49,6 +49,12 @@
 <p>1、<a href="http://developer.baidu.com/map/">百度地图</a></p>
 
 <p>2、<a href="http://lbs.amap.com/">高德地图</a></p>
+
+<h3>APP支付</h3>
+
+<p>1、<a href="http://mobile.unionpay.com/">银联支付</a></p>
+
+<p>2、<a href="https://b.alipay.com/order/productDetail.htm?productId=2014110308141993">支付宝</a></p>
 ]]></content>
   </entry>
   
