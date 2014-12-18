@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Android | Yankun]]></title>
   <link href="http://yankunren.github.io/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-18T11:15:49+08:00</updated>
+  <updated>2014-12-18T11:40:17+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -96,6 +96,34 @@ public class DemoApplication extends FrontiaApplication
 </code></pre>
 
 <p>&#8220;`</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Android知识点]]></title>
+    <link href="http://yankunren.github.io/blog/2012/02/15/android-knowledge/"/>
+    <updated>2012-02-15T11:20:38+08:00</updated>
+    <id>http://yankunren.github.io/blog/2012/02/15/android-knowledge</id>
+    <content type="html"><![CDATA[<p>1、通过代码设置控件的layout_weight属性：
+<code>java
+.setLayoutParams(new LinearLayout.LayoutParams(0,LayoutParams.FILL_PARENT, (1.0f / 4)));
+</code>
+2、Assets 下的资源如何使用？
+<code>java
+Context.getAssets().open(String path)
+</code>
+3、Android调用已安装市场，进行软件评分的功能实现
+<code>java
+Uri uri = Uri.parse("market://details?id="+getPackageName());  
+Intent intent = new Intent(Intent.ACTION_VIEW,uri);  
+intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);  
+startActivity(intent);
+</code></p>
+
+<!-- more -->
+
+
+<p>4、动态设置android:drawableLeft|Right|Top|Bottom</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Yankun]]></title>
   <link href="http://yankunren.github.io/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-18T11:15:49+08:00</updated>
+  <updated>2014-12-18T11:40:17+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -510,6 +510,45 @@ DevKit下载下来的是一个自压缩文件，我们将其解压到D:/DevKit�
 
 <p>2><strong>使用操作</strong>
 <img src="http://yankunren.github.io/images/blog-img/eclipse-plugin-statistic-2.png" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Android知识点]]></title>
+    <link href="http://yankunren.github.io/blog/2012/02/15/android-knowledge/"/>
+    <updated>2012-02-15T11:20:38+08:00</updated>
+    <id>http://yankunren.github.io/blog/2012/02/15/android-knowledge</id>
+    <content type="html"><![CDATA[<p>1、通过代码设置控件的layout_weight属性：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">.</span><span class="na">setLayoutParams</span><span class="o">(</span><span class="k">new</span> <span class="n">LinearLayout</span><span class="o">.</span><span class="na">LayoutParams</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="n">LayoutParams</span><span class="o">.</span><span class="na">FILL_PARENT</span><span class="o">,</span> <span class="o">(</span><span class="mf">1.0f</span> <span class="o">/</span> <span class="mi">4</span><span class="o">)));</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2、Assets 下的资源如何使用？</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">Context</span><span class="o">.</span><span class="na">getAssets</span><span class="o">().</span><span class="na">open</span><span class="o">(</span><span class="n">String</span> <span class="n">path</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>3、Android调用已安装市场，进行软件评分的功能实现</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">Uri</span> <span class="n">uri</span> <span class="o">=</span> <span class="n">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">&quot;market://details?id=&quot;</span><span class="o">+</span><span class="n">getPackageName</span><span class="o">());</span>
+</span><span class='line'><span class="n">Intent</span> <span class="n">intent</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Intent</span><span class="o">(</span><span class="n">Intent</span><span class="o">.</span><span class="na">ACTION_VIEW</span><span class="o">,</span><span class="n">uri</span><span class="o">);</span>
+</span><span class='line'><span class="n">intent</span><span class="o">.</span><span class="na">addFlags</span><span class="o">(</span><span class="n">Intent</span><span class="o">.</span><span class="na">FLAG_ACTIVITY_NEW_TASK</span><span class="o">);</span>
+</span><span class='line'><span class="n">startActivity</span><span class="o">(</span><span class="n">intent</span><span class="o">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<!-- more -->
+
+
+<p>4、动态设置android:drawableLeft|Right|Top|Bottom</p>
 ]]></content>
   </entry>
   

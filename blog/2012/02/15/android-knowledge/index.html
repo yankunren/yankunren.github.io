@@ -5,12 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Android技术整理 - Yankun</title>
+  <title>Android知识点 - Yankun</title>
   <meta name="author" content="Yankun">
 
   
-  <meta name="description" content="Android站点： 1、http://www.23code.com/ 2、http://www.javaapk.com/ 3、
-">
+  <meta name="description" content="1、通过代码设置控件的layout_weight属性： 1
+.setLayoutParams(new LinearLayout.LayoutParams(0,LayoutParams.FILL_PARENT, (1.0f / 4))); 2、Assets 下的资源如何使用？ 1
+Context. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yankunren.github.io/blog/2014/12/16/android-tech">
+  <link rel="canonical" href="http://yankunren.github.io/blog/2012/02/15/android-knowledge">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Yankun" type="application/atom+xml">
@@ -70,7 +71,7 @@
   
   <header>
     
-      <h1 class="entry-title">Android技术整理</h1>
+      <h1 class="entry-title">Android知识点</h1>
     
     
       <p class="meta">
@@ -79,7 +80,7 @@
 
 
 
-<time class='entry-date' datetime='2014-12-16T17:33:09+08:00'><span class='date'>2014-12-16 Tue</span> <span class='time'>5:33 pm</span></time>
+<time class='entry-date' datetime='2012-02-15T11:20:38+08:00'><span class='date'>2012-02-15 Wed</span> <span class='time'>11:20 am</span></time>
         
 		
           | <a href="#comments">Comments</a>
@@ -89,13 +90,37 @@
   </header>
 
 
-<div class="entry-content"><h3>Android站点：</h3>
+<div class="entry-content"><p>1、通过代码设置控件的layout_weight属性：</p>
 
-<p>1、<a href="http://www.23code.com/">http://www.23code.com/</a></p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">.</span><span class="na">setLayoutParams</span><span class="o">(</span><span class="k">new</span> <span class="n">LinearLayout</span><span class="o">.</span><span class="na">LayoutParams</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="n">LayoutParams</span><span class="o">.</span><span class="na">FILL_PARENT</span><span class="o">,</span> <span class="o">(</span><span class="mf">1.0f</span> <span class="o">/</span> <span class="mi">4</span><span class="o">)));</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<p>2、<a href="http://www.javaapk.com/">http://www.javaapk.com/</a></p>
 
-<p>3、</p>
+<p>2、Assets 下的资源如何使用？</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">Context</span><span class="o">.</span><span class="na">getAssets</span><span class="o">().</span><span class="na">open</span><span class="o">(</span><span class="n">String</span> <span class="n">path</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>3、Android调用已安装市场，进行软件评分的功能实现</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">Uri</span> <span class="n">uri</span> <span class="o">=</span> <span class="n">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">&quot;market://details?id=&quot;</span><span class="o">+</span><span class="n">getPackageName</span><span class="o">());</span>
+</span><span class='line'><span class="n">Intent</span> <span class="n">intent</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Intent</span><span class="o">(</span><span class="n">Intent</span><span class="o">.</span><span class="na">ACTION_VIEW</span><span class="o">,</span><span class="n">uri</span><span class="o">);</span>
+</span><span class='line'><span class="n">intent</span><span class="o">.</span><span class="na">addFlags</span><span class="o">(</span><span class="n">Intent</span><span class="o">.</span><span class="na">FLAG_ACTIVITY_NEW_TASK</span><span class="o">);</span>
+</span><span class='line'><span class="n">startActivity</span><span class="o">(</span><span class="n">intent</span><span class="o">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<!-- more -->
+
+
+<p>4、动态设置android:drawableLeft|Right|Top|Bottom</p>
 </div>
 
 
@@ -111,7 +136,7 @@
 
 
 
-<time class='entry-date' datetime='2014-12-16T17:33:09+08:00'><span class='date'>2014-12-16 Tue</span> <span class='time'>5:33 pm</span></time>
+<time class='entry-date' datetime='2012-02-15T11:20:38+08:00'><span class='date'>2012-02-15 Wed</span> <span class='time'>11:20 am</span></time>
       
 
 <span class="categories">
@@ -132,10 +157,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/12/03/build-blog-references/" title="Previous Post: build-blog-references">&laquo; build-blog-references</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/12/17/app-solution-center/" title="Next Post: APP解决方案">APP解决方案 &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2012/07/21/eclipse-plugin-statistic/" title="Next Post: Eclipse 添加代码行数统计插件">Eclipse 添加代码行数统计插件 &raquo;</a>
       
     </p>
   </footer>
@@ -145,7 +168,7 @@
   <section>
     <h1>Comments</h1>
     <div id="comments" aria-live="polite"><!-- Duoshuo Comment BEGIN -->
-<div class="ds-thread" data-title="Android技术整理"></div>
+<div class="ds-thread" data-title="Android知识点"></div>
 <script type="text/javascript">
   var duoshuoQuery = {short_name:"yankunren"};
   (function() {
