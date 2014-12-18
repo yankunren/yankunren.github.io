@@ -4,7 +4,7 @@
   <title><![CDATA[Yankun]]></title>
   <link href="http://yankunren.github.io/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-18T11:40:17+08:00</updated>
+  <updated>2014-12-18T11:48:16+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -493,9 +493,8 @@ DevKit下载下来的是一个自压缩文件，我们将其解压到D:/DevKit�
 
 <p>2、放入目录：</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>E:\eclipse\features</span></code></pre></td></tr></table></div></figure>
-
+<pre><code>E:\eclipse\features
+</code></pre>
 
 <p>3、重启Eclipse</p>
 
@@ -521,7 +520,7 @@ DevKit下载下来的是一个自压缩文件，我们将其解压到D:/DevKit�
     <content type="html"><![CDATA[<p>1、通过代码设置控件的layout_weight属性：</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">.</span><span class="na">setLayoutParams</span><span class="o">(</span><span class="k">new</span> <span class="n">LinearLayout</span><span class="o">.</span><span class="na">LayoutParams</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="n">LayoutParams</span><span class="o">.</span><span class="na">FILL_PARENT</span><span class="o">,</span> <span class="o">(</span><span class="mf">1.0f</span> <span class="o">/</span> <span class="mi">4</span><span class="o">)));</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">setLayoutParams</span><span class="o">(</span><span class="k">new</span> <span class="n">LinearLayout</span><span class="o">.</span><span class="na">LayoutParams</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="n">LayoutParams</span><span class="o">.</span><span class="na">FILL_PARENT</span><span class="o">,</span> <span class="o">(</span><span class="mf">1.0f</span> <span class="o">/</span> <span class="mi">4</span><span class="o">)));</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -549,6 +548,11 @@ DevKit下载下来的是一个自压缩文件，我们将其解压到D:/DevKit�
 
 
 <p>4、动态设置android:drawableLeft|Right|Top|Bottom</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">setCompoundDrawables</span><span class="o">(</span><span class="n">drawable</span> <span class="n">left</span><span class="o">,</span> <span class="n">drawable</span> <span class="n">top</span><span class="o">,</span> <span class="n">drawable</span> <span class="n">right</span><span class="o">,</span> <span class="n">drawable</span> <span class="n">bottom</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
 ]]></content>
   </entry>
   

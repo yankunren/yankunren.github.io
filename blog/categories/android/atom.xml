@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Android | Yankun]]></title>
   <link href="http://yankunren.github.io/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-18T11:40:17+08:00</updated>
+  <updated>2014-12-18T11:48:16+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -106,7 +106,7 @@ public class DemoApplication extends FrontiaApplication
     <id>http://yankunren.github.io/blog/2012/02/15/android-knowledge</id>
     <content type="html"><![CDATA[<p>1、通过代码设置控件的layout_weight属性：
 <code>java
-.setLayoutParams(new LinearLayout.LayoutParams(0,LayoutParams.FILL_PARENT, (1.0f / 4)));
+setLayoutParams(new LinearLayout.LayoutParams(0,LayoutParams.FILL_PARENT, (1.0f / 4)));
 </code>
 2、Assets 下的资源如何使用？
 <code>java
@@ -123,7 +123,10 @@ startActivity(intent);
 <!-- more -->
 
 
-<p>4、动态设置android:drawableLeft|Right|Top|Bottom</p>
+<p>4、动态设置android:drawableLeft|Right|Top|Bottom
+<code>java
+setCompoundDrawables(drawable left, drawable top, drawable right, drawable bottom)
+</code></p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tools | Yankun]]></title>
   <link href="http://yankunren.github.io/blog/categories/tools/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-18T11:40:17+08:00</updated>
+  <updated>2014-12-18T11:48:16+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -60,11 +60,12 @@
 
 <p>解压文件：<strong>org.holon.statistic.lines_1.0.0</strong></p>
 
-<p>2、放入目录：
-<code>
-E:\eclipse\features
-</code>
-3、重启Eclipse</p>
+<p>2、放入目录：</p>
+
+<pre><code>E:\eclipse\features
+</code></pre>
+
+<p>3、重启Eclipse</p>
 
 <!-- more -->
 
