@@ -4,7 +4,7 @@
   <title><![CDATA[Yankun]]></title>
   <link href="http://yankunren.github.io/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-17T20:34:12+08:00</updated>
+  <updated>2014-12-18T11:02:16+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -441,6 +441,41 @@ DevKit下载下来的是一个自压缩文件，我们将其解压到D:/DevKit�
 </span><span class='line'><span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">&quot;android.permission.ACCESS_COARSE_LOCATION&quot;</span> <span class="nt">/&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[【转载】Eclipse项目GBK编码转换]]></title>
+    <link href="http://yankunren.github.io/blog/2013/08/26/eclipse-gbk-to-utf8/"/>
+    <updated>2013-08-26T11:45:38+08:00</updated>
+    <id>http://yankunren.github.io/blog/2013/08/26/eclipse-gbk-to-utf8</id>
+    <content type="html"><![CDATA[<pre><code>相信很多人都有项目中文乱码的情况吧，对于代码中有中文注释的项目来说，如果编码不统一，移植起来可能会很头疼，因为有的人可能一直都是GBK编码，虽然我们都提倡UTF-8,但这和平台及eclipse的编码设置有关，对于windows开发者来说，如果默认设置，那建完项目开始写，后来才发现是GBK编码，后悔莫及，这样带来了很多不便和麻烦。鉴于上面的问题，我还是推荐windows平台开发者统一编码为UTF-8,养成良好的习惯避免不必要的麻烦。
+</code></pre>
+
+<p> 至于原来gbk编码的项目该如何处理，我这里推荐一个eclipse插件&ndash;<a href="http://yankunren.github.io/files/com.lifesting.tool.encoding_1.0.0.jar"><strong>com.lifesting.tool.encoding_1.0.0.jar</strong></a></p>
+
+<h3>具体使用方法如下：</h3>
+
+<p>1.将插件jar文件放入eclipse目录/plugins/文件夹下，重启Eclipse</p>
+
+<pre><code>&lt;img src="http://yankunren.github.io/images/blog-img/eclipse-gbk-to-utf8-1.png" /&gt;
+</code></pre>
+
+<p>2.选中项目，打开属性（Alt+Enter）,现在Resource条目下将项目编码改为自身编码，如GBK,你还会看到多了一项Convert Setting，点击进入</p>
+
+<pre><code>&lt;img src="http://yankunren.github.io/images/blog-img/eclipse-gbk-to-utf8-2.png" /&gt;
+</code></pre>
+
+<p>3.设置好之后，点击Apply</p>
+
+<p>4.最后一步，右键项目，Lifesting Tools&ndash;Set Encode.</p>
+
+<pre><code>&lt;img src="http://yankunren.github.io/images/blog-img/eclipse-gbk-to-utf8-3.png" /&gt;
+</code></pre>
+
+<p>这样再把项目编码改为utf-8，你会发现中文ok,项目已经成功转码为UFT-8了</p>
+
+<h2><strong>PS:</strong>请先将Eclipse编码设置GBK,工程代码正常情况下进行如上操作，否则无效</h2>
 ]]></content>
   </entry>
   
