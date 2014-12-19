@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Android | Yankun]]></title>
+  <title><![CDATA[分类：android | Yankun]]></title>
   <link href="http://yankunren.github.io/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-19T17:44:54+08:00</updated>
+  <updated>2014-12-19T22:39:13+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Android技术整理]]></title>
-    <link href="http://yankunren.github.io/blog/2014/12/16/android-tech/"/>
+    <link href="http://yankunren.github.io/blog/android-tech/"/>
     <updated>2014-12-16T17:33:09+08:00</updated>
-    <id>http://yankunren.github.io/blog/2014/12/16/android-tech</id>
+    <id>http://yankunren.github.io/blog/android-tech</id>
     <content type="html"><![CDATA[<h3>Android站点：</h3>
 
 <p>1、<a href="http://www.23code.com/">http://www.23code.com/</a></p>
@@ -30,9 +30,9 @@
   
   <entry>
     <title type="html"><![CDATA[Android客户端集成百度推送服务]]></title>
-    <link href="http://yankunren.github.io/blog/2014/06/26/android-integrate-baidu-push/"/>
+    <link href="http://yankunren.github.io/blog/android-integrate-baidu-push/"/>
     <updated>2014-06-26T18:38:23+08:00</updated>
-    <id>http://yankunren.github.io/blog/2014/06/26/android-integrate-baidu-push</id>
+    <id>http://yankunren.github.io/blog/android-integrate-baidu-push</id>
     <content type="html"><![CDATA[<p><strong>1、创建项目：</strong><a href="http://developer.baidu.com/console#app/create">http://developer.baidu.com/console#app/create</a></p>
 
 <p><img src="/images/blog-img/android-integrate-baidu-push-1.png" /><!-- more --></p>
@@ -101,9 +101,9 @@ public class DemoApplication extends FrontiaApplication
   
   <entry>
     <title type="html"><![CDATA[Android知识点]]></title>
-    <link href="http://yankunren.github.io/blog/2012/02/15/android-knowledge/"/>
+    <link href="http://yankunren.github.io/blog/android-knowledge/"/>
     <updated>2012-02-15T11:20:38+08:00</updated>
-    <id>http://yankunren.github.io/blog/2012/02/15/android-knowledge</id>
+    <id>http://yankunren.github.io/blog/android-knowledge</id>
     <content type="html"><![CDATA[<p>1、通过代码设置控件的layout_weight属性：
 <code>java
 setLayoutParams(new LinearLayout.LayoutParams(0,LayoutParams.FILL_PARENT, (1.0f / 4)));

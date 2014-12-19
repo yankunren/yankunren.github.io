@@ -4,7 +4,7 @@
   <title><![CDATA[Yankun]]></title>
   <link href="http://yankunren.github.io/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-19T17:44:54+08:00</updated>
+  <updated>2014-12-19T22:39:13+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[APP解决方案]]></title>
-    <link href="http://yankunren.github.io/blog/2014/12/17/app-solution-center/"/>
+    <link href="http://yankunren.github.io/blog/app-solution-center/"/>
     <updated>2014-12-17T11:20:29+08:00</updated>
-    <id>http://yankunren.github.io/blog/2014/12/17/app-solution-center</id>
+    <id>http://yankunren.github.io/blog/app-solution-center</id>
     <content type="html"><![CDATA[<h2>移动IM集成方案</h2>
 
 <p>1、<a href="http://www.easemob.com/">环信</a></p>
@@ -60,9 +60,9 @@
   
   <entry>
     <title type="html"><![CDATA[Android技术整理]]></title>
-    <link href="http://yankunren.github.io/blog/2014/12/16/android-tech/"/>
+    <link href="http://yankunren.github.io/blog/android-tech/"/>
     <updated>2014-12-16T17:33:09+08:00</updated>
-    <id>http://yankunren.github.io/blog/2014/12/16/android-tech</id>
+    <id>http://yankunren.github.io/blog/android-tech</id>
     <content type="html"><![CDATA[<h3>Android站点：</h3>
 
 <p>1、<a href="http://www.23code.com/">http://www.23code.com/</a></p>
@@ -75,9 +75,9 @@
   
   <entry>
     <title type="html"><![CDATA[Build-blog-references]]></title>
-    <link href="http://yankunren.github.io/blog/2014/12/03/build-blog-references/"/>
+    <link href="http://yankunren.github.io/blog/build-blog-references/"/>
     <updated>2014-12-03T17:21:32+08:00</updated>
-    <id>http://yankunren.github.io/blog/2014/12/03/build-blog-references</id>
+    <id>http://yankunren.github.io/blog/build-blog-references</id>
     <content type="html"><![CDATA[<p><strong>参考文章：</strong></p>
 
 <p>1、<a href="http://www.jianshu.com/p/0ac2ac1a8e45">添加文章分类</a></p>
@@ -94,9 +94,9 @@
   
   <entry>
     <title type="html"><![CDATA[集成‘多说’评论]]></title>
-    <link href="http://yankunren.github.io/blog/2014/12/01/integrate-comments-duoshuo/"/>
+    <link href="http://yankunren.github.io/blog/integrate-comments-duoshuo/"/>
     <updated>2014-12-01T16:48:23+08:00</updated>
-    <id>http://yankunren.github.io/blog/2014/12/01/integrate-comments-duoshuo</id>
+    <id>http://yankunren.github.io/blog/integrate-comments-duoshuo</id>
     <content type="html"><![CDATA[<h2>首先申请多说评论，官网：<a href="http://duoshuo.com/">http://duoshuo.com/</a> 添加站点获取shortname</h2>
 
 <h3>集成步骤：</h3>
@@ -210,18 +210,18 @@
   
   <entry>
     <title type="html"><![CDATA[About]]></title>
-    <link href="http://yankunren.github.io/blog/2014/12/01/about/"/>
+    <link href="http://yankunren.github.io/blog/about/"/>
     <updated>2014-12-01T10:50:38+08:00</updated>
-    <id>http://yankunren.github.io/blog/2014/12/01/about</id>
+    <id>http://yankunren.github.io/blog/about</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[搭建Octopress博客]]></title>
-    <link href="http://yankunren.github.io/blog/2014/11/28/build-blog-with-octopress/"/>
+    <link href="http://yankunren.github.io/blog/build-blog-with-octopress/"/>
     <updated>2014-11-28T10:58:24+08:00</updated>
-    <id>http://yankunren.github.io/blog/2014/11/28/build-blog-with-octopress</id>
+    <id>http://yankunren.github.io/blog/build-blog-with-octopress</id>
     <content type="html"><![CDATA[<h3>Windows搭建</h3>
 
 <p>转载：<a href="http://www.cnblogs.com/oec2003/archive/2013/05/27/3100896.html">http://www.cnblogs.com/oec2003/archive/2013/05/27/3100896.html</a></p>
@@ -336,9 +336,9 @@ DevKit下载下来的是一个自压缩文件，我们将其解压到D:/DevKit�
   
   <entry>
     <title type="html"><![CDATA[Android客户端集成百度推送服务]]></title>
-    <link href="http://yankunren.github.io/blog/2014/06/26/android-integrate-baidu-push/"/>
+    <link href="http://yankunren.github.io/blog/android-integrate-baidu-push/"/>
     <updated>2014-06-26T18:38:23+08:00</updated>
-    <id>http://yankunren.github.io/blog/2014/06/26/android-integrate-baidu-push</id>
+    <id>http://yankunren.github.io/blog/android-integrate-baidu-push</id>
     <content type="html"><![CDATA[<p><strong>1、创建项目：</strong><a href="http://developer.baidu.com/console#app/create">http://developer.baidu.com/console#app/create</a></p>
 
 <p><img src="http://yankunren.github.io/images/blog-img/android-integrate-baidu-push-1.png" /><!-- more --></p>
@@ -448,9 +448,9 @@ DevKit下载下来的是一个自压缩文件，我们将其解压到D:/DevKit�
   
   <entry>
     <title type="html"><![CDATA[【转】Eclipse项目GBK编码转换]]></title>
-    <link href="http://yankunren.github.io/blog/2013/08/26/eclipse-gbk-to-utf8/"/>
+    <link href="http://yankunren.github.io/blog/eclipse-gbk-to-utf8/"/>
     <updated>2013-08-26T11:45:38+08:00</updated>
-    <id>http://yankunren.github.io/blog/2013/08/26/eclipse-gbk-to-utf8</id>
+    <id>http://yankunren.github.io/blog/eclipse-gbk-to-utf8</id>
     <content type="html"><![CDATA[<p>相信很多人都有项目中文乱码的情况吧，对于代码中有中文注释的项目来说，如果编码不统一，移植起来可能会很头疼，因为有的人可能一直都是GBK编码，虽然我们都提倡UTF-8,但这和平台及eclipse的编码设置有关，对于windows开发者来说，如果默认设置，那建完项目开始写，后来才发现是GBK编码，后悔莫及，这样带来了很多不便和麻烦。鉴于上面的问题，我还是推荐windows平台开发者统一编码为UTF-8,养成良好的习惯避免不必要的麻烦。</p>
 
 <!-- more -->
@@ -486,9 +486,9 @@ DevKit下载下来的是一个自压缩文件，我们将其解压到D:/DevKit�
   
   <entry>
     <title type="html"><![CDATA[Eclipse 添加代码行数统计插件]]></title>
-    <link href="http://yankunren.github.io/blog/2012/07/21/eclipse-plugin-statistic/"/>
+    <link href="http://yankunren.github.io/blog/eclipse-plugin-statistic/"/>
     <updated>2012-07-21T17:24:38+08:00</updated>
-    <id>http://yankunren.github.io/blog/2012/07/21/eclipse-plugin-statistic</id>
+    <id>http://yankunren.github.io/blog/eclipse-plugin-statistic</id>
     <content type="html"><![CDATA[<p>1、下载地址： <a href="http://download.csdn.net/detail/zhangquanchang/3152289">http://download.csdn.net/detail/zhangquanchang/3152289</a></p>
 
 <p>解压文件：<strong>org.holon.statistic.lines_1.0.0</strong></p>
@@ -516,9 +516,9 @@ DevKit下载下来的是一个自压缩文件，我们将其解压到D:/DevKit�
   
   <entry>
     <title type="html"><![CDATA[Android知识点]]></title>
-    <link href="http://yankunren.github.io/blog/2012/02/15/android-knowledge/"/>
+    <link href="http://yankunren.github.io/blog/android-knowledge/"/>
     <updated>2012-02-15T11:20:38+08:00</updated>
-    <id>http://yankunren.github.io/blog/2012/02/15/android-knowledge</id>
+    <id>http://yankunren.github.io/blog/android-knowledge</id>
     <content type="html"><![CDATA[<p>1、通过代码设置控件的layout_weight属性：</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>

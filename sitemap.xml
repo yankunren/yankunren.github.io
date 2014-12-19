@@ -1,76 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://yankunren.github.io/blog/2014/12/17/app-solution-center/</loc>
+    <loc>http://yankunren.github.io/blog/app-solution-center/</loc>
     <lastmod>2014-12-17T11:20:29+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://yankunren.github.io/blog/2014/12/16/android-tech/</loc>
+    <loc>http://yankunren.github.io/blog/android-tech/</loc>
     <lastmod>2014-12-16T17:33:09+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://yankunren.github.io/blog/2014/12/03/build-blog-references/</loc>
+    <loc>http://yankunren.github.io/blog/build-blog-references/</loc>
     <lastmod>2014-12-03T17:21:32+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://yankunren.github.io/blog/2014/12/01/integrate-comments-duoshuo/</loc>
+    <loc>http://yankunren.github.io/blog/integrate-comments-duoshuo/</loc>
     <lastmod>2014-12-01T16:48:23+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://yankunren.github.io/blog/2014/12/01/about/</loc>
+    <loc>http://yankunren.github.io/blog/about/</loc>
     <lastmod>2014-12-01T10:50:38+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://yankunren.github.io/blog/2014/11/28/build-blog-with-octopress/</loc>
+    <loc>http://yankunren.github.io/blog/build-blog-with-octopress/</loc>
     <lastmod>2014-11-28T10:58:24+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://yankunren.github.io/blog/2014/06/26/android-integrate-baidu-push/</loc>
+    <loc>http://yankunren.github.io/blog/android-integrate-baidu-push/</loc>
     <lastmod>2014-06-26T18:38:23+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://yankunren.github.io/blog/2013/08/26/eclipse-gbk-to-utf8/</loc>
+    <loc>http://yankunren.github.io/blog/eclipse-gbk-to-utf8/</loc>
     <lastmod>2013-08-26T11:45:38+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://yankunren.github.io/blog/2012/07/21/eclipse-plugin-statistic/</loc>
+    <loc>http://yankunren.github.io/blog/eclipse-plugin-statistic/</loc>
     <lastmod>2012-07-21T17:24:38+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://yankunren.github.io/blog/2012/02/15/android-knowledge/</loc>
+    <loc>http://yankunren.github.io/blog/android-knowledge/</loc>
     <lastmod>2012-02-15T11:20:38+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://yankunren.github.io/404.html</loc>
-    <lastmod>2014-12-19T17:44:54+08:00</lastmod>
+    <lastmod>2014-12-19T22:39:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://yankunren.github.io/</loc>
-    <lastmod>2014-12-19T17:44:54+08:00</lastmod>
+    <lastmod>2014-12-19T22:39:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://yankunren.github.io/blog/archives/</loc>
-    <lastmod>2014-12-19T17:44:54+08:00</lastmod>
+    <lastmod>2014-12-19T22:39:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://yankunren.github.io/about/</loc>
-    <lastmod>2014-12-19T17:44:54+08:00</lastmod>
+    <lastmod>2014-12-19T22:39:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: App | Yankun]]></title>
+  <title><![CDATA[分类：app | Yankun]]></title>
   <link href="http://yankunren.github.io/blog/categories/app/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-19T17:44:54+08:00</updated>
+  <updated>2014-12-19T22:39:13+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[APP解决方案]]></title>
-    <link href="http://yankunren.github.io/blog/2014/12/17/app-solution-center/"/>
+    <link href="http://yankunren.github.io/blog/app-solution-center/"/>
     <updated>2014-12-17T11:20:29+08:00</updated>
-    <id>http://yankunren.github.io/blog/2014/12/17/app-solution-center</id>
+    <id>http://yankunren.github.io/blog/app-solution-center</id>
     <content type="html"><![CDATA[<h2>移动IM集成方案</h2>
 
 <p>1、<a href="http://www.easemob.com/">环信</a></p>

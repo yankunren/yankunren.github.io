@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>【转】Eclipse项目GBK编码转换 - Yankun</title>
+  <title>Android技术整理 - Yankun</title>
   <meta name="author" content="Yankun">
 
   
-  <meta name="description" content="相信很多人都有项目中文乱码的情况吧，对于代码中有中文注释的项目来说，如果编码不统一，移植起来可能会很头疼，因为有的人可能一直都是GBK编码，虽然我们都提倡UTF-8,但这和平台及eclipse的编码设置有关，对于windows开发者来说，如果默认设置，那建完项目开始写，后来才发现是GBK编码， &hellip;">
+  <meta name="description" content="Android站点： 1、http://www.23code.com/ 2、http://www.javaapk.com/ 3、
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yankunren.github.io/blog/2013/08/26/eclipse-gbk-to-utf8">
+  <link rel="canonical" href="http://yankunren.github.io/blog/android-tech">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Yankun" type="application/atom+xml">
@@ -69,7 +70,7 @@
   
   <header>
     
-      <h1 class="entry-title">【转】Eclipse项目GBK编码转换</h1>
+      <h1 class="entry-title">Android技术整理</h1>
     
     
       <p class="meta">
@@ -78,7 +79,7 @@
 
 
 
-<time class='entry-date' datetime='2013-08-26T11:45:38+08:00'><span class='date'>2013-08-26 Mon</span> <span class='time'>11:45 am</span></time>
+<time class='entry-date' datetime='2014-12-16T17:33:09+08:00'><span class='date'>2014-12-16 Tue</span> <span class='time'>5:33 pm</span></time>
         
 		
           | <a href="#comments">Comments</a>
@@ -88,36 +89,13 @@
   </header>
 
 
-<div class="entry-content"><p>相信很多人都有项目中文乱码的情况吧，对于代码中有中文注释的项目来说，如果编码不统一，移植起来可能会很头疼，因为有的人可能一直都是GBK编码，虽然我们都提倡UTF-8,但这和平台及eclipse的编码设置有关，对于windows开发者来说，如果默认设置，那建完项目开始写，后来才发现是GBK编码，后悔莫及，这样带来了很多不便和麻烦。鉴于上面的问题，我还是推荐windows平台开发者统一编码为UTF-8,养成良好的习惯避免不必要的麻烦。</p>
+<div class="entry-content"><h3>Android站点：</h3>
 
-<!-- more -->
+<p>1、<a href="http://www.23code.com/">http://www.23code.com/</a></p>
 
+<p>2、<a href="http://www.javaapk.com/">http://www.javaapk.com/</a></p>
 
-<p>至于原来gbk编码的项目该如何处理，我这里推荐一个eclipse插件&ndash;<a href="/files/com.lifesting.tool.encoding_1.0.0.jar"><strong>com.lifesting.tool.encoding_1.0.0.jar</strong></a></p>
-
-<h3>具体使用方法如下：</h3>
-
-<p>1.将插件jar文件放入eclipse目录/plugins/文件夹下，重启Eclipse</p>
-
-<p><img src="/images/blog-img/eclipse-gbk-to-utf8-1.jpeg" /></p>
-
-<p>2.选中项目，打开属性（<strong>Alt+Enter</strong>）,现在Resource条目下将项目编码改为自身编码，如GBK,你还会看到多了一项<strong>Convert Setting</strong>，点击进入</p>
-
-<p><img src="/images/blog-img/eclipse-gbk-to-utf8-2.jpeg" /></p>
-
-<p>3.设置好之后，点击<strong>Apply</strong></p>
-
-<p>4.最后一步，右键项目，<strong>Lifesting Tools&ndash;Set Encode</strong>.</p>
-
-<p><img src="/images/blog-img/eclipse-gbk-to-utf8-3.png" /></p>
-
-<p>这样再把项目编码改为utf-8，你会发现中文ok,项目已经成功转码为UFT-8了</p>
-
-<h2><strong>PS:</strong></h2>
-
-<p>请先将Eclipse编码设置GBK,工程代码正常情况下进行如上操作，否则无效</p>
-
-<p><strong>转载自</strong>：<a href="http://blog.csdn.net/songzhiyong1121/article/details/9252687">http://blog.csdn.net/songzhiyong1121/article/details/9252687</a></p>
+<p>3、</p>
 </div>
 
 
@@ -133,12 +111,12 @@
 
 
 
-<time class='entry-date' datetime='2013-08-26T11:45:38+08:00'><span class='date'>2013-08-26 Mon</span> <span class='time'>11:45 am</span></time>
+<time class='entry-date' datetime='2014-12-16T17:33:09+08:00'><span class='date'>2014-12-16 Tue</span> <span class='time'>5:33 pm</span></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/tools/'>tools</a>
+    <a class='category' href='/blog/categories/android/'>android</a>
   
 </span>
 
@@ -154,10 +132,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/07/21/eclipse-plugin-statistic/" title="Previous Post: Eclipse 添加代码行数统计插件">&laquo; Eclipse 添加代码行数统计插件</a>
+        <a class="basic-alignment left" href="/blog/build-blog-references/" title="Previous Post: build-blog-references">&laquo; build-blog-references</a>
       
       
-        <a class="basic-alignment right" href="/blog/2014/06/26/android-integrate-baidu-push/" title="Next Post: Android客户端集成百度推送服务">Android客户端集成百度推送服务 &raquo;</a>
+        <a class="basic-alignment right" href="/blog/app-solution-center/" title="Next Post: APP解决方案">APP解决方案 &raquo;</a>
       
     </p>
   </footer>
@@ -167,7 +145,7 @@
   <section>
     <h1>Comments</h1>
     <div id="comments" aria-live="polite"><!-- Duoshuo Comment BEGIN -->
-<div class="ds-thread" data-title="【转】Eclipse项目GBK编码转换"></div>
+<div class="ds-thread" data-title="Android技术整理"></div>
 <script type="text/javascript">
   var duoshuoQuery = {short_name:"yankunren"};
   (function() {
@@ -197,23 +175,23 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2014/12/17/app-solution-center/">APP解决方案</a>
+        <a href="/blog/app-solution-center/">APP解决方案</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/12/16/android-tech/">Android技术整理</a>
+        <a href="/blog/android-tech/">Android技术整理</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/12/03/build-blog-references/">Build-blog-references</a>
+        <a href="/blog/build-blog-references/">Build-blog-references</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/12/01/integrate-comments-duoshuo/">集成‘多说’评论</a>
+        <a href="/blog/integrate-comments-duoshuo/">集成‘多说’评论</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/12/01/about/">About</a>
+        <a href="/blog/about/">About</a>
       </li>
     
   </ul>
