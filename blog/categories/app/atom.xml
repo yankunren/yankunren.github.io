@@ -4,7 +4,7 @@
   <title><![CDATA[分类：app | Yankun]]></title>
   <link href="http://yankunren.github.io/blog/categories/app/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-25T15:37:07+08:00</updated>
+  <updated>2014-12-29T15:39:57+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -12,6 +12,63 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[APP开源项目收集]]></title>
+    <link href="http://yankunren.github.io/blog/app-open-source/"/>
+    <updated>2014-12-17T15:20:29+08:00</updated>
+    <id>http://yankunren.github.io/blog/app-open-source</id>
+    <content type="html"><![CDATA[<h2>移动IM集成方案</h2>
+
+<p>1、<a href="http://www.easemob.com/">环信</a></p>
+
+<p>2、<a href="http://www.rongcloud.cn/">融云</a></p>
+
+<h2>社会化分享方案</h2>
+
+<p>1、<a href="http://sharesdk.mob.com/Download">ShareSDK</a> <!-- more --></p>
+
+<p>2、<a href="http://www.umeng.com/social">友盟分享</a></p>
+
+<h2>信息推送方案</h2>
+
+<p>1、<a href="https://www.jpush.cn/common/">极光推送</a></p>
+
+<p>2、<a href="http://xg.qq.com/xg">腾讯信鸽</a></p>
+
+<p>3、<a href="http://www.umeng.com/push">友盟消息推送</a></p>
+
+<p>4、<a href="http://developer.baidu.com/cloud/push">百度云推送</a></p>
+
+<h2>语音</h2>
+
+<p>1、<a href="http://www.iflytek.com/">讯飞语音</a></p>
+
+<h2>地图</h2>
+
+<p>1、<a href="http://developer.baidu.com/map/">百度地图</a></p>
+
+<p>2、<a href="http://lbs.amap.com/">高德地图</a></p>
+
+<h2>APP支付</h2>
+
+<p>1、<a href="http://mobile.unionpay.com/">银联支付</a></p>
+
+<p>2、<a href="https://b.alipay.com/order/productDetail.htm?productId=2014110308141993">支付宝</a></p>
+
+<h2>人脸识别</h2>
+
+<p>1、<a href="http://cn.faceplusplus.com/">Face++ 人脸识别</a></p>
+
+<h2>违章查询</h2>
+
+<p>1、<a href="http://www.cheshouye.com/">车首页</a></p>
+
+<p>|编号|说明|国外|
+|—|—|—|
+|1|上海|纽约|</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[APP解决方案]]></title>
@@ -63,6 +120,10 @@
 <h2>违章查询</h2>
 
 <p>1、<a href="http://www.cheshouye.com/">车首页</a></p>
+
+<p>|编号|说明|国外|
+|—|—|—|
+|1|上海|纽约|</p>
 ]]></content>
   </entry>
   

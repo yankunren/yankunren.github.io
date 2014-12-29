@@ -72,6 +72,49 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/app-open-source/">APP开源项目收集</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-12-17T15:20:29+08:00'><span class='date'>2014-12-17 Wed</span> <span class='time'>3:20 pm</span></time>
+        
+		
+          | <a href="/blog/app-open-source/#comments">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>移动IM集成方案</h2>
+
+<p>1、<a href="http://www.easemob.com/">环信</a></p>
+
+<p>2、<a href="http://www.rongcloud.cn/">融云</a></p>
+
+<h2>社会化分享方案</h2>
+
+<p>1、<a href="http://sharesdk.mob.com/Download">ShareSDK</a> </div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/app-open-source/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/app-solution-center/">APP解决方案</a></h1>
     
     
@@ -213,7 +256,7 @@
   </header>
 
 
-  <div class="entry-content"><h2>首先申请多说评论，官网：<a href="http://duoshuo.com/">http://duoshuo.com/</a> 添加站点获取shortname</h2>
+  <div class="entry-content"><p>首先申请多说评论，官网：<a href="http://duoshuo.com/">http://duoshuo.com/</a> 添加站点获取shortname</p>
 
 <h3>集成步骤：</h3>
 
@@ -435,69 +478,9 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/android-knowledge/">Android知识点</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2012-02-15T11:20:38+08:00'><span class='date'>2012-02-15 Wed</span> <span class='time'>11:20 am</span></time>
-        
-		
-          | <a href="/blog/android-knowledge/#comments">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>1、通过代码设置控件的layout_weight属性：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">setLayoutParams</span><span class="o">(</span><span class="k">new</span> <span class="n">LinearLayout</span><span class="o">.</span><span class="na">LayoutParams</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="n">LayoutParams</span><span class="o">.</span><span class="na">FILL_PARENT</span><span class="o">,</span> <span class="o">(</span><span class="mf">1.0f</span> <span class="o">/</span> <span class="mi">4</span><span class="o">)));</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2、Assets 下的资源如何使用？</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">Context</span><span class="o">.</span><span class="na">getAssets</span><span class="o">().</span><span class="na">open</span><span class="o">(</span><span class="n">String</span> <span class="n">path</span><span class="o">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>3、Android调用已安装市场，进行软件评分的功能实现</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">Uri</span> <span class="n">uri</span> <span class="o">=</span> <span class="n">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">&quot;market://details?id=&quot;</span><span class="o">+</span><span class="n">getPackageName</span><span class="o">());</span>
-</span><span class='line'><span class="n">Intent</span> <span class="n">intent</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Intent</span><span class="o">(</span><span class="n">Intent</span><span class="o">.</span><span class="na">ACTION_VIEW</span><span class="o">,</span><span class="n">uri</span><span class="o">);</span>
-</span><span class='line'><span class="n">intent</span><span class="o">.</span><span class="na">addFlags</span><span class="o">(</span><span class="n">Intent</span><span class="o">.</span><span class="na">FLAG_ACTIVITY_NEW_TASK</span><span class="o">);</span>
-</span><span class='line'><span class="n">startActivity</span><span class="o">(</span><span class="n">intent</span><span class="o">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/android-knowledge/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
+    
+      <a class="prev" href="/posts/2">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -516,6 +499,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/app-open-source/">APP开源项目收集</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/app-solution-center/">APP解决方案</a>
       </li>
     
@@ -531,17 +518,13 @@
         <a href="/blog/integrate-comments-duoshuo/">集成‘多说’评论</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/about/">About</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>分类目录</h1>
   <ul id="categories">
 	<li class='category'><a href='/blog/categories/android/'>android (3)</a></li>
-<li class='category'><a href='/blog/categories/app/'>app (1)</a></li>
+<li class='category'><a href='/blog/categories/app/'>app (2)</a></li>
 <li class='category'><a href='/blog/categories/octopress/'>octopress (2)</a></li>
 <li class='category'><a href='/blog/categories/tools/'>tools (2)</a></li>
 
