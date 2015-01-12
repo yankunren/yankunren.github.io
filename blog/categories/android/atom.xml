@@ -4,7 +4,7 @@
   <title><![CDATA[分类：android | Yankun]]></title>
   <link href="http://yankunren.github.io/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-29T15:39:57+08:00</updated>
+  <updated>2015-01-12T11:32:25+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -35,13 +35,13 @@
     <id>http://yankunren.github.io/blog/android-integrate-baidu-push</id>
     <content type="html"><![CDATA[<p><strong>1、创建项目：</strong><a href="http://developer.baidu.com/console#app/create">http://developer.baidu.com/console#app/create</a></p>
 
-<p><img src="/images/blog-img/android-integrate-baidu-push-1.png" /><!-- more --></p>
+<p><img src="/images/blog-img/android-integrate-baidu-push-1.png" width="600" height="400"><!-- more --></p>
 
 <p><strong>2、推送设置</strong></p>
 
-<p><img src="/images/blog-img/android-integrate-baidu-push-2.png" /></p>
+<p><img src="/images/blog-img/android-integrate-baidu-push-2.png"" width="600" height="400"></p>
 
-<p><img src="/images/blog-img/android-integrate-baidu-push-3.png" /></p>
+<p><img src="/images/blog-img/android-integrate-baidu-push-3.png"" width="600" height="400"></p>
 
 <p><strong>3、客户端集成</strong>
 <a href="http://developer.baidu.com/wiki/index.php?title=docs/cplat/push">http://developer.baidu.com/wiki/index.php?title=docs/cplat/push</a></p>

@@ -4,7 +4,7 @@
   <title><![CDATA[Yankun]]></title>
   <link href="http://yankunren.github.io/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-29T15:39:57+08:00</updated>
+  <updated>2015-01-12T11:32:25+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -18,55 +18,21 @@
     <link href="http://yankunren.github.io/blog/app-open-source/"/>
     <updated>2014-12-17T15:20:29+08:00</updated>
     <id>http://yankunren.github.io/blog/app-open-source</id>
-    <content type="html"><![CDATA[<h2>移动IM集成方案</h2>
+    <content type="html"><![CDATA[<h2>1、Coding.net客户端</h2>
 
-<p>1、<a href="http://www.easemob.com/">环信</a></p>
+<p>1、<a href="https://coding.net/u/coding/p/Coding-Android/git">Android</a></p>
 
-<p>2、<a href="http://www.rongcloud.cn/">融云</a></p>
+<p>2、<a href="https://coding.net/u/coding/p/Coding-iOS/git">IOS</a></p>
 
-<h2>社会化分享方案</h2>
+<h2>2、开源中国</h2>
 
-<p>1、<a href="http://sharesdk.mob.com/Download">ShareSDK</a> <!-- more --></p>
+<p>1、<a href="https://git.oschina.net/oschina/android-app">android-app</a> <!-- more --></p>
 
-<p>2、<a href="http://www.umeng.com/social">友盟分享</a></p>
+<p>2、<a href="https://git.oschina.net/oschina/iphone-app">iphone-app</a></p>
 
-<h2>信息推送方案</h2>
+<p>3、<a href="https://git.oschina.net/oschina/git-osc-android-project">git-osc-android</a></p>
 
-<p>1、<a href="https://www.jpush.cn/common/">极光推送</a></p>
-
-<p>2、<a href="http://xg.qq.com/xg">腾讯信鸽</a></p>
-
-<p>3、<a href="http://www.umeng.com/push">友盟消息推送</a></p>
-
-<p>4、<a href="http://developer.baidu.com/cloud/push">百度云推送</a></p>
-
-<h2>语音</h2>
-
-<p>1、<a href="http://www.iflytek.com/">讯飞语音</a></p>
-
-<h2>地图</h2>
-
-<p>1、<a href="http://developer.baidu.com/map/">百度地图</a></p>
-
-<p>2、<a href="http://lbs.amap.com/">高德地图</a></p>
-
-<h2>APP支付</h2>
-
-<p>1、<a href="http://mobile.unionpay.com/">银联支付</a></p>
-
-<p>2、<a href="https://b.alipay.com/order/productDetail.htm?productId=2014110308141993">支付宝</a></p>
-
-<h2>人脸识别</h2>
-
-<p>1、<a href="http://cn.faceplusplus.com/">Face++ 人脸识别</a></p>
-
-<h2>违章查询</h2>
-
-<p>1、<a href="http://www.cheshouye.com/">车首页</a></p>
-
-<p>|编号|说明|国外|
-|—|—|—|
-|1|上海|纽约|</p>
+<p>4、<a href="https://git.oschina.net/oschina/git-osc-iphone">git-osc-iphone</a></p>
 ]]></content>
   </entry>
   
@@ -120,10 +86,6 @@
 <h2>违章查询</h2>
 
 <p>1、<a href="http://www.cheshouye.com/">车首页</a></p>
-
-<p>|编号|说明|国外|
-|—|—|—|
-|1|上海|纽约|</p>
 ]]></content>
   </entry>
   
@@ -410,13 +372,13 @@ DevKit下载下来的是一个自压缩文件，我们将其解压到D:/DevKit�
     <id>http://yankunren.github.io/blog/android-integrate-baidu-push</id>
     <content type="html"><![CDATA[<p><strong>1、创建项目：</strong><a href="http://developer.baidu.com/console#app/create">http://developer.baidu.com/console#app/create</a></p>
 
-<p><img src="http://yankunren.github.io/images/blog-img/android-integrate-baidu-push-1.png" /><!-- more --></p>
+<p><img src="http://yankunren.github.io/images/blog-img/android-integrate-baidu-push-1.png" width="600" height="400"><!-- more --></p>
 
 <p><strong>2、推送设置</strong></p>
 
-<p><img src="http://yankunren.github.io/images/blog-img/android-integrate-baidu-push-2.png" /></p>
+<p><img src="http://yankunren.github.io/images/blog-img/android-integrate-baidu-push-2.png"" width="600" height="400"></p>
 
-<p><img src="http://yankunren.github.io/images/blog-img/android-integrate-baidu-push-3.png" /></p>
+<p><img src="http://yankunren.github.io/images/blog-img/android-integrate-baidu-push-3.png"" width="600" height="400"></p>
 
 <p><strong>3、客户端集成</strong>
 <a href="http://developer.baidu.com/wiki/index.php?title=docs/cplat/push">http://developer.baidu.com/wiki/index.php?title=docs/cplat/push</a></p>
@@ -531,17 +493,17 @@ DevKit下载下来的是一个自压缩文件，我们将其解压到D:/DevKit�
 
 <p>1.将插件jar文件放入eclipse目录/plugins/文件夹下，重启Eclipse</p>
 
-<p><img src="http://yankunren.github.io/images/blog-img/eclipse-gbk-to-utf8-1.jpeg" /></p>
+<p><img src="http://yankunren.github.io/images/blog-img/eclipse-gbk-to-utf8-1.jpeg"" width="600" height="400"></p>
 
 <p>2.选中项目，打开属性（<strong>Alt+Enter</strong>）,现在Resource条目下将项目编码改为自身编码，如GBK,你还会看到多了一项<strong>Convert Setting</strong>，点击进入</p>
 
-<p><img src="http://yankunren.github.io/images/blog-img/eclipse-gbk-to-utf8-2.jpeg" /></p>
+<p><img src="http://yankunren.github.io/images/blog-img/eclipse-gbk-to-utf8-2.jpeg"" width="600" height="400"></p>
 
 <p>3.设置好之后，点击<strong>Apply</strong></p>
 
 <p>4.最后一步，右键项目，<strong>Lifesting Tools&ndash;Set Encode</strong>.</p>
 
-<p><img src="http://yankunren.github.io/images/blog-img/eclipse-gbk-to-utf8-3.png" /></p>
+<p><img src="http://yankunren.github.io/images/blog-img/eclipse-gbk-to-utf8-3.png"" width="300" height="300"></p>
 
 <p>这样再把项目编码改为utf-8，你会发现中文ok,项目已经成功转码为UFT-8了</p>
 
@@ -576,10 +538,10 @@ DevKit下载下来的是一个自压缩文件，我们将其解压到D:/DevKit�
 
 <p>1><strong>显示插件：</strong></p>
 
-<p><img src="http://yankunren.github.io/images/blog-img/eclipse-plugin-statistic-1.png" /></p>
+<p><img src="http://yankunren.github.io/images/blog-img/eclipse-plugin-statistic-1.png""></p>
 
 <p>2><strong>使用操作</strong>
-<img src="http://yankunren.github.io/images/blog-img/eclipse-plugin-statistic-2.png" /></p>
+<img src="http://yankunren.github.io/images/blog-img/eclipse-plugin-statistic-2.png""></p>
 ]]></content>
   </entry>
   

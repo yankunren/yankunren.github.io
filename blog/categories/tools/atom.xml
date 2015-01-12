@@ -4,7 +4,7 @@
   <title><![CDATA[分类：tools | Yankun]]></title>
   <link href="http://yankunren.github.io/blog/categories/tools/atom.xml" rel="self"/>
   <link href="http://yankunren.github.io/"/>
-  <updated>2014-12-29T15:39:57+08:00</updated>
+  <updated>2015-01-12T11:32:25+08:00</updated>
   <id>http://yankunren.github.io/</id>
   <author>
     <name><![CDATA[Yankun]]></name>
@@ -29,17 +29,17 @@
 
 <p>1.将插件jar文件放入eclipse目录/plugins/文件夹下，重启Eclipse</p>
 
-<p><img src="/images/blog-img/eclipse-gbk-to-utf8-1.jpeg" /></p>
+<p><img src="/images/blog-img/eclipse-gbk-to-utf8-1.jpeg"" width="600" height="400"></p>
 
 <p>2.选中项目，打开属性（<strong>Alt+Enter</strong>）,现在Resource条目下将项目编码改为自身编码，如GBK,你还会看到多了一项<strong>Convert Setting</strong>，点击进入</p>
 
-<p><img src="/images/blog-img/eclipse-gbk-to-utf8-2.jpeg" /></p>
+<p><img src="/images/blog-img/eclipse-gbk-to-utf8-2.jpeg"" width="600" height="400"></p>
 
 <p>3.设置好之后，点击<strong>Apply</strong></p>
 
 <p>4.最后一步，右键项目，<strong>Lifesting Tools&ndash;Set Encode</strong>.</p>
 
-<p><img src="/images/blog-img/eclipse-gbk-to-utf8-3.png" /></p>
+<p><img src="/images/blog-img/eclipse-gbk-to-utf8-3.png"" width="300" height="300"></p>
 
 <p>这样再把项目编码改为utf-8，你会发现中文ok,项目已经成功转码为UFT-8了</p>
 
@@ -74,10 +74,10 @@
 
 <p>1><strong>显示插件：</strong></p>
 
-<p><img src="/images/blog-img/eclipse-plugin-statistic-1.png" /></p>
+<p><img src="/images/blog-img/eclipse-plugin-statistic-1.png""></p>
 
 <p>2><strong>使用操作</strong>
-<img src="/images/blog-img/eclipse-plugin-statistic-2.png" /></p>
+<img src="/images/blog-img/eclipse-plugin-statistic-2.png""></p>
 ]]></content>
   </entry>
   
