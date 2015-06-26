@@ -24,7 +24,7 @@ RUN gem install bundler
 USER octopress
 WORKDIR /tmp
 # Change your project here (istall your project gems version)
-RUN git clone -b master https://git.coding.net/yankun/octopress.git octopress
+RUN git clone -b source https://github.com/yankunren/yankunren.github.io.git octopress
 WORKDIR /tmp/octopress
 RUN bundle install
 #RUN rake install
